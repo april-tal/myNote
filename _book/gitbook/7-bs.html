@@ -1,0 +1,850 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第七节：部署脚本 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="8-error.html" />
+    
+    
+    <link rel="prev" href="6-pg.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../vue/">
+            
+                <a href="../vue/">
+            
+                    
+                    第一章：Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../vue/1-env.html">
+            
+                <a href="../vue/1-env.html">
+            
+                    
+                    第一节：搭建环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../vue/2-comp.html">
+            
+                <a href="../vue/2-comp.html">
+            
+                    
+                    第二节：添加组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../vue/3-state.html">
+            
+                <a href="../vue/3-state.html">
+            
+                    
+                    第三节：组件内使用 state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../vue/4-props.html">
+            
+                <a href="../vue/4-props.html">
+            
+                    
+                    第四节：props 传递属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../vue/5-form.html">
+            
+                <a href="../vue/5-form.html">
+            
+                    
+                    第五节：提交评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../vue/6-params.html">
+            
+                <a href="../vue/6-params.html">
+            
+                    
+                    第六节：动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../vue/7-router.html">
+            
+                <a href="../vue/7-router.html">
+            
+                    
+                    第七节：使用 vue-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../react/">
+            
+                <a href="../react/">
+            
+                    
+                    第二章：React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../react/1-jsx.html">
+            
+                <a href="../react/1-jsx.html">
+            
+                    
+                    第一节：JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../react/2-api.html">
+            
+                <a href="../react/2-api.html">
+            
+                    
+                    第二节：API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../react/3-handle.html">
+            
+                <a href="../react/3-handle.html">
+            
+                    
+                    第三节：绑定事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../react/4-lifecycle.html">
+            
+                <a href="../react/4-lifecycle.html">
+            
+                    
+                    第四节：生命周期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../react/5-props.html">
+            
+                <a href="../react/5-props.html">
+            
+                    
+                    第五节：props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../react/6-state.html">
+            
+                <a href="../react/6-state.html">
+            
+                    
+                    第六节：state
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../flexbox/">
+            
+                <a href="../flexbox/">
+            
+                    
+                    第三章：Flexbox
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../flexbox/1-dire.html">
+            
+                <a href="../flexbox/1-dire.html">
+            
+                    
+                    第一节：排列方向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../flexbox/2-wrap.html">
+            
+                <a href="../flexbox/2-wrap.html">
+            
+                    
+                    第二节：控制换行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../flexbox/3-content.html">
+            
+                <a href="../flexbox/3-content.html">
+            
+                    
+                    第三节：对齐方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../flexbox/4-flex.html">
+            
+                <a href="../flexbox/4-flex.html">
+            
+                    
+                    第四节：flex 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../flexbox/5-basis.html">
+            
+                <a href="../flexbox/5-basis.html">
+            
+                    
+                    第五节：grow/shrink/basis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../compatible/">
+            
+                <a href="../compatible/">
+            
+                    
+                    第四章：compatible
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../compatible/1-ie.html">
+            
+                <a href="../compatible/1-ie.html">
+            
+                    
+                    第一节：IE 条件注释法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../compatible/2-css.html">
+            
+                <a href="../compatible/2-css.html">
+            
+                    
+                    第二节：CSS属性前缀法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../compatible/3-nth.html">
+            
+                <a href="../compatible/3-nth.html">
+            
+                    
+                    第三节：选择器前缀法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    第五章：JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../javascript/1-var.html">
+            
+                <a href="../javascript/1-var.html">
+            
+                    
+                    第一节：变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../javascript/2-type.html">
+            
+                <a href="../javascript/2-type.html">
+            
+                    
+                    第二节：数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../javascript/3-way.html">
+            
+                <a href="../javascript/3-way.html">
+            
+                    
+                    第三节：方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../es6/">
+            
+                <a href="../es6/">
+            
+                    
+                    第六章：es6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../es6/1-arr.html">
+            
+                <a href="../es6/1-arr.html">
+            
+                    
+                    第一节：数组的复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../es6/2-lei.html">
+            
+                <a href="../es6/2-lei.html">
+            
+                    
+                    第二节：es6 类的写法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../es6/3-jc.html">
+            
+                <a href="../es6/3-jc.html">
+            
+                    
+                    第三节：es6的继承写法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第七章：Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="1-mkd.html">
+            
+                <a href="1-mkd.html">
+            
+                    
+                    第一节：markdown 上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="2-az.html">
+            
+                <a href="2-az.html">
+            
+                    
+                    第二节：安装 Gitbook 创建笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="3-xg.html">
+            
+                <a href="3-xg.html">
+            
+                    
+                    第三节：修改笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="4-bf.html">
+            
+                <a href="4-bf.html">
+            
+                    
+                    第四节：备份笔记到 github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="5-jt.html">
+            
+                <a href="5-jt.html">
+            
+                    
+                    第五节：编译 Gitbook 为静态页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="6-pg.html">
+            
+                <a href="6-pg.html">
+            
+                    
+                    第六节：托管到 github pages 网站服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.7" data-path="7-bs.html">
+            
+                <a href="7-bs.html">
+            
+                    
+                    第七节：部署脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="8-error.html">
+            
+                <a href="8-error.html">
+            
+                    
+                    第八节：常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第七节：部署脚本</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x5316;&#x811A;&#x672C;&#xFF0C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x81EA;&#x52A8;&#x5316;&#x521B;&#x5EFA;&#x548C;&#x66F4;&#x65B0;-gh-pages">&#x81EA;&#x52A8;&#x5316;&#x521B;&#x5EFA;&#x548C;&#x66F4;&#x65B0; gh-pages</h3>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x4E00;&#x4E2A; npm &#x5305;&#xFF0C;&#x6765;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;</p>
+<pre><code>cd my-note/
+npm i gh-pages
+</code></pre><p>&#x7136;&#x540E;&#x521B;&#x5EFA; my-note/scripts/deploy-gh-pages.js</p>
+<p>&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">var</span> ghpages = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gh-pages&apos;</span>);
+
+main();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>) </span>{
+    ghpages.publish(<span class="hljs-string">&apos;./gh-pages&apos;</span>, <span class="hljs-built_in">console</span>.error.bind(<span class="hljs-built_in">console</span>));
+}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x811A;&#x672C;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684; gh-pages &#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF0C;push &#x5230;&#x672C;&#x4ED3;&#x5E93;&#x7684; gh-pages &#x5206;&#x652F;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; npm &#x811A;&#x672C; <code>deploy</code> &#xFF08; deploy &#x5C31;&#x662F;&#x90E8;&#x7F72;&#x7684;&#x610F;&#x601D;&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;scripts&quot;</span>: {
+ <span class="hljs-string">&quot;start&quot;</span>: <span class="hljs-string">&quot;gitbook serve ./content ./gh-pages&quot;</span>,
+ <span class="hljs-string">&quot;deploy&quot;</span>: <span class="hljs-string">&quot;node ./scripts/deploy-gh-pages.js&quot;</span>,
+},
+</code></pre>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x53EF;&#x4EE5;&#x6765;&#x8BD5;&#x8BD5;&#xFF0C;&#x4FDD;&#x8BC1; <code>npm start</code> &#x5904;&#x4E8E;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C;</p>
+<pre><code>npm run deploy
+</code></pre><p>&#x6CE8;&#xFF1A;&#x5982;&#x679C;&#x6700;&#x540E;&#x8FD4;&#x56DE; <code>undefined</code> &#x5B57;&#x6837;&#xFF0C;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x90E8;&#x7F72;&#x6210;&#x529F;&#x3002;</p>
+<p>&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4E66;&#x7A3F; push &#x5230;&#x8FDC;&#x7AEF;&#x4ED3;&#x5E93;&#x7684; gh-pages &#x5206;&#x652F;&#x4E86;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5230; <a href="https://happypeter.github.io/my-note" target="_blank">https://happypeter.github.io/my-note</a> &#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x4E66;&#x4E86;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x5927;&#x529F;&#x544A;&#x6210;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6-pg.html" class="navigation navigation-prev " aria-label="Previous page: 第六节：托管到 github pages 网站服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="8-error.html" class="navigation navigation-next " aria-label="Next page: 第八节：常见错误">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第七节：部署脚本","level":"1.8.7","depth":2,"next":{"title":"第八节：常见错误","level":"1.8.8","depth":2,"path":"gitbook/8-error.md","ref":"./gitbook/8-error.md","articles":[]},"previous":{"title":"第六节：托管到 github pages 网站服务","level":"1.8.6","depth":2,"path":"gitbook/6-pg.md","ref":"./gitbook/6-pg.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gitbook/7-bs.md","mtime":"2018-01-17T05:01:05.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-17T03:26:59.551Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook.js"></script>
+    <script src="theme.js"></script>
+    
+        
+        <script src="gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
