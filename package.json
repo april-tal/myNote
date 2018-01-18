@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gitbook serve ./content ./gh-pages"
+    "start": "gitbook serve ./content ./gh-pages",
+    "build": "gitbook build ./content ./gh-pages",
+    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "publish": "npm run build&&npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/april-tal/myNote/issues"
   },
-  "homepage": "https://github.com/april-tal/myNote#readme"
+  "homepage": "https://github.com/april-tal/myNote#readme",
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
